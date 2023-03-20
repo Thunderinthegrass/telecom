@@ -1,0 +1,87 @@
+.header {
+  padding: 15px 0 30px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top-left {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 200px;
+    height: 70px;
+    display: inline-block;
+    background-image: url(../img/svg/telecom-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 23px;
+  }
+  .logo {
+    width: 100%;
+  }
+  &__city-btn {
+    padding-left: 16px;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.5;
+    font-size: 14px;
+    &::before {
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      content: "";
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../img/svg/location.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .city__popup{
+    display: none;
+  }
+  &__top-right {
+    display: flex;
+    align-items: center;gap: 27px;
+  }
+  &__phone {
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-color;
+  }
+  .login-btn {
+    padding: 9px 18px;
+    border: 1px solid #ff8981;
+    display: block;
+    border-radius: 100px;
+    color: $text-color;
+    transition: 0.3s;
+    &:hover {
+      background: #ff8981;
+      color: #fff;
+    }
+  }
+  .cart__btn {
+    display: block;
+    width: 80px;
+    height: 42px;
+    background: #ff8981;
+    background-image: url(../img/svg/basket.svg);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background: #ff574b;
+      background-image: url(../img/svg/basket.svg);
+      background-repeat: no-repeat;
+      background-size: 40%;
+      background-position: center;
+    }
+  }
+}
