@@ -90,6 +90,7 @@ body {
   font-size: 18px;
   color: #77787a;
   color: #282C34;
+  background: #f3f3f6;
 }
 
 .wrapper {
@@ -123,6 +124,10 @@ body {
   position: relative;
 }
 
+.d-none {
+  display: none;
+}
+
 .header {
   padding: 15px 0 30px;
 }
@@ -154,13 +159,16 @@ body {
 .header .logo {
   width: 100%;
 }
+.header .city-wrapper {
+  position: relative;
+}
 .header__city-btn {
   padding-left: 16px;
   height: auto;
   cursor: pointer;
   position: relative;
-  opacity: 0.5;
   font-size: 14px;
+  opacity: 0.5;
 }
 .header__city-btn::before {
   position: absolute;
@@ -177,7 +185,70 @@ body {
   background-repeat: no-repeat;
 }
 .header .city__popup {
-  display: none;
+  position: absolute;
+  padding: 20px;
+  background: #ffffff;
+  top: calc(100% + 14px);
+  left: -34px;
+  border-radius: 2px;
+}
+.header .city__popup::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  z-index: 0;
+  left: 33px;
+  top: -6px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.header .city__popup-btn {
+  color: #282C34;
+}
+.header .city__popup .city__question {
+  color: #282C34;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.header .city__popup .city__popup-close-btn {
+  position: absolute;
+  cursor: pointer;
+}
+.header .city__popup .city__popup-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.header .city__popup .city__correctly-btn {
+  padding: 9px 18px;
+  border: 1px solid #ff8981;
+  display: block;
+  border-radius: 100px;
+  color: #282C34;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.header .city__popup .city__correctly-btn:hover {
+  background: #ff8981;
+  color: #fff;
+}
+.header .city__popup .city__select-btn {
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header .city__popup .city__select-btn:hover {
+  color: #ff8981;
 }
 .header__top-right {
   display: -webkit-box;
@@ -226,7 +297,7 @@ body {
   background: #ff574b;
   background-image: url(../img/svg/basket.svg);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 35%;
   background-position: center;
 }
 

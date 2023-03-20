@@ -8,6 +8,7 @@ body {
   font-size: 18px;
   color: #77787a;
   color: $text-color;
+  background: #f3f3f6;
 }
 .wrapper {
   display: flex;
@@ -28,4 +29,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
+}
+.d-none{
+  display: none;
 }

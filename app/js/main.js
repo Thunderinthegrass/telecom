@@ -14,5 +14,15 @@
 // }
 // scrollToLink();
 
+function cityPopup() {
+  const cityBtn = document.querySelector('.header__city-btn');
+  const cityPopup = document.querySelector('.city__popup');
+  
+  cityBtn.addEventListener('click', () => {
+    cityPopup.classList.toggle('d-none');
+  })
+}
+cityPopup();
+
 
 

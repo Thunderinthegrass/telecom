@@ -21,15 +21,19 @@
             <a href="#" class="header__logo">
               
             </a>
-            <div class="header__city-btn city">
-              <span class="header__city-name">Санкт-петербург</span>
-              <div class="city__popup">
-                <span class="city__question">
+            <div class="city-wrapper">
+              <button class="header__city-btn city">
+                <span class="header__city-name">Братск</span>
+              </button>
+              <div class="city__popup d-none">
+                <p class="city__question">
                   Это ваш город?
-                </span>
-                <button class="city__popup-close-btn"></button>
-                <button class="city__close-btn">Все верно</button>
-                <button class="city__select-btn">Выбрать город</button>
+                </p>
+                <button class="city__popup-close-btn city__popup-btn"></button>
+                <div class="city__popup-btns">
+                  <button class="city__correctly-btn city__popup-btn">Все верно</button>
+                  <button class="city__select-btn city__popup-btn">Выбрать город</button>
+                </div>
               </div>
             </div>
           </div>
