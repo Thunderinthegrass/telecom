@@ -87,7 +87,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #77787a;
   color: #282C34;
   background: #f3f3f6;
@@ -138,6 +138,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 .header__top-left {
   display: -webkit-box;
@@ -226,7 +227,7 @@ body {
 }
 .header .city__popup .city__correctly-btn {
   padding: 9px 18px;
-  border: 1px solid #ff8981;
+  border: 1px solid #FF8981;
   display: block;
   border-radius: 100px;
   color: #282C34;
@@ -237,7 +238,7 @@ body {
   cursor: pointer;
 }
 .header .city__popup .city__correctly-btn:hover {
-  background: #ff8981;
+  background: #FF8981;
   color: #fff;
 }
 .header .city__popup .city__select-btn {
@@ -248,7 +249,7 @@ body {
   transition: 0.3s;
 }
 .header .city__popup .city__select-btn:hover {
-  color: #ff8981;
+  color: #FF8981;
 }
 .header__top-right {
   display: -webkit-box;
@@ -258,6 +259,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 27px;
+  font-size: 18px;
 }
 .header__phone {
   font-size: 20px;
@@ -266,7 +268,7 @@ body {
 }
 .header .login-btn {
   padding: 9px 18px;
-  border: 1px solid #ff8981;
+  border: 1px solid #FF8981;
   display: block;
   border-radius: 100px;
   color: #282C34;
@@ -275,14 +277,14 @@ body {
   transition: 0.3s;
 }
 .header .login-btn:hover {
-  background: #ff8981;
+  background: #FF8981;
   color: #fff;
 }
 .header .cart__btn {
   display: block;
   width: 80px;
   height: 42px;
-  background: #ff8981;
+  background: #FF8981;
   background-image: url(../img/svg/basket.svg);
   background-repeat: no-repeat;
   background-size: 35%;
@@ -304,9 +306,62 @@ body {
 .hits {
   padding-top: 80px;
 }
+
+.hits {
+  padding-top: 80px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+}
+.nav__list .nav__link {
+  color: #282C34;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav__list-left .nav__link:hover {
+  color: #FF8981;
+}
+.nav__list-right .nav__link {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.nav__list-right .nav__link:hover {
+  opacity: 1;
+}
+.nav__list-right .nav__link-companies {
+  position: relative;
+  padding-right: 15px;
+}
+.nav__list-right .nav__link-companies::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/svg/output.svg);
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 @supports (-webkit-appearance:none){
 .header__logo{background-image:url(../img/svg/telecom-logo.svg)}
 .header__city-btn::before{background-image:url(../img/svg/location.svg)}
 .header .cart__btn{background-image:url(../img/svg/basket.svg)}
 .header .cart__btn:hover{background-image:url(../img/svg/basket.svg)}
+.nav__list-right .nav__link-companies::after{background-image:url(../img/svg/output.svg)}
 }

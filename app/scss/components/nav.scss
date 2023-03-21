@@ -1,0 +1,43 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  &__list{
+    display: flex;
+    gap: 36px;
+    .nav__link{
+      color: $text-color;
+      transition: .3s;
+    }
+  }
+  &__list-left{
+    .nav__link{
+      &:hover{
+        color: $pink;
+      }
+    }
+  }
+  &__list-right{
+    .nav__link{
+      opacity: .5;
+      font-size: 14px;
+      &:hover{
+        opacity: 1;
+      }
+      &-companies{
+        position: relative;
+        padding-right: 15px;
+        &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-image: url(../img/svg/output.svg);
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

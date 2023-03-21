@@ -3,6 +3,7 @@
   &__top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   &__top-left {
     display: flex;
@@ -80,7 +81,7 @@
     }
     .city__correctly-btn {
       padding: 9px 18px;
-      border: 1px solid #ff8981;
+      border: 1px solid $pink;
       display: block;
       border-radius: 100px;
       color: $text-color;
@@ -88,7 +89,7 @@
       white-space: nowrap;
       cursor: pointer;
       &:hover {
-        background: #ff8981;
+        background: $pink;
         color: #fff;
       }
     }
@@ -97,7 +98,7 @@
       cursor: pointer;
       transition: .3s;
       &:hover{
-        color: #ff8981;
+        color: $pink;
       }
     }
   }
@@ -105,6 +106,7 @@
     display: flex;
     align-items: center;
     gap: 27px;
+    font-size: 18px;
   }
   &__phone {
     font-size: 20px;
@@ -113,13 +115,13 @@
   }
   .login-btn {
     padding: 9px 18px;
-    border: 1px solid #ff8981;
+    border: 1px solid $pink;
     display: block;
     border-radius: 100px;
     color: $text-color;
     transition: 0.3s;
     &:hover {
-      background: #ff8981;
+      background: $pink;
       color: #fff;
     }
   }
@@ -127,7 +129,7 @@
     display: block;
     width: 80px;
     height: 42px;
-    background: #ff8981;
+    background: $pink;
     background-image: url(../img/svg/basket.svg);
     background-repeat: no-repeat;
     background-size: 35%;
