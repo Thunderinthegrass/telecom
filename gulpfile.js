@@ -63,6 +63,7 @@ function images() {
 function scripts() {
   return src([
   //   'node_modules/jquery/dist/jquery.js',
+    'app/js/swiper.js',
     'app/js/main.js',
     // 'app/js/slick.min.js'
   ])
