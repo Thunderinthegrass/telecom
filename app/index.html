@@ -23,16 +23,16 @@
             </a>
             <div class="city-wrapper">
               <button class="header__city-btn city">
-                <span class="header__city-name">Братск</span>
+                <span class="header__city-name city--popup">Москва</span>
               </button>
-              <div class="city__popup d-none">
-                <p class="city__question">
+              <div class="city__popup d-none city--popup">
+                <p class="city__question city--popup">
                   Это ваш город?
                 </p>
                 <button class="city__popup-close-btn city__popup-btn"></button>
                 <div class="city__popup-btns">
-                  <button class="city__correctly-btn city__popup-btn">Все верно</button>
-                  <button class="city__select-btn city__popup-btn">Выбрать город</button>
+                  <button class="city__correct-btn city__popup-btn">Все верно</button>
+                  <button class="city__select-btn city__popup-btn popup-path" data-path="city__modal">Выбрать город</button>
                 </div>
               </div>
             </div>
@@ -68,6 +68,21 @@
       </div>
     </header>
     <div class="hero">
+      <div class="modal-overlay">
+        <div class="modal city__modal" data-target="city__modal">
+          <button class="modal-close-btn">
+            <svg class="">
+              <use xlink:href="img/sprite/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <h2 class="city__modal-title">Выберите город</h2>
+          <ul class="city__modal-list">
+            <li class="city__modal-item city__modal-item--current">Москва</li>
+            <li class="city__modal-item">Московская область</li>
+            <li class="city__modal-item">Санкт-Петербург</li>
+          </ul>
+        </div>
+      </div>
       <div class="container">
         <div class="hero__inner">
           <div class="hero__column hero__column-left">

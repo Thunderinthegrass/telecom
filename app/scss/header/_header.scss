@@ -51,6 +51,7 @@
     top: calc(100% + 14px);
     left: -34px;
     border-radius: 2px;
+    z-index: 1;
     &::before {
       content: "";
       display: block;
@@ -79,7 +80,33 @@
       display: flex;
       gap: 10px;
     }
-    .city__correctly-btn {
+    .city__popup-close-btn{
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 8px;
+      right: 8px;
+      &::before{
+        content: "";
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        background-image: url(../img/svg/plus.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s;
+        transform: rotate(45deg);
+      }
+      &:hover{
+        &:before{
+          transform: rotate(135deg);
+        }
+      }
+    }
+    .city__correct-btn {
       padding: 9px 18px;
       border: 1px solid $pink;
       display: block;
@@ -87,6 +114,8 @@
       color: $text-color;
       transition: 0.3s;
       white-space: nowrap;
+      font-size: 18px;
+      font-weight: 500;
       cursor: pointer;
       &:hover {
         background: $pink;
@@ -97,6 +126,8 @@
       white-space: nowrap;
       cursor: pointer;
       transition: .3s;
+      font-size: 18px;
+      font-weight: 500;
       &:hover{
         color: $pink;
       }
